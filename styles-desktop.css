@@ -12,7 +12,7 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-nav, article, .standard-curriculum-container, .stories-container{
+nav, article, .standard-curriculum-container, .stories-container, .footer-section{
     max-width: 1160px;
     margin: 0 auto;
 }
@@ -27,8 +27,10 @@ h1{
 ul{
     list-style: none;
     font-size: 20px;
-    font-weight: 600;
     gap: 32px;
+}
+nav ul{
+    font-weight: 600;
 }
 .flex{
     display: flex;
@@ -48,7 +50,7 @@ ul{
     height: 50px;
     padding: 10px;
 }
-.hero-paragraph{
+.hero-paragraph, .footer-paragraph{
     font-size: 20px;
     font-weight: 400;
 }
@@ -146,6 +148,34 @@ ul{
     background-color: rgb(149, 178, 38);
     padding: 10px 20px;
     top: -50px;
+}
+.footer-section{
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    padding: 120px;
+}
+.footer-logo-section{
+    width: 400px;
+}
+.footer-logo img{
+    height: 100px;
+}
+.footer-logo-section h2{
+    font-size: 42px;
+}
+.footer-about-us-section h2, .footer-socials-section h2{
+    font-size: 24px;
+}
+.footer-section h2{
+    font-weight: 700;
+    margin-top: 0;
+}
+.footer-about-us-section ul{
+    padding-left: 0;
+}
+.footer-about-us-section li{
+    margin-top: 32px;
+    margin-bottom: 20px;
 }
 #school-logo{
     height: fit-content;
