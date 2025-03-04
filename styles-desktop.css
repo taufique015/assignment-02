@@ -8,10 +8,9 @@ body{
 nav{
     justify-content: space-between;
     align-items: center;
-    margin: 20px auto;
 }
-nav, article, .standard-curriculum-container, .our-stories{
-    max-width: 1200px;
+nav, article, .standard-curriculum-container, .stories-container{
+    max-width: 1160px;
     margin: 0 auto;
 }
 section{
@@ -36,30 +35,25 @@ ul{
     font-size: 15px;
     font-weight: 500;
 }
+.btn{
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    width: 196px;
+    height: 50px;
+    padding: 10px;
+}
 .hero-paragraph{
     font-size: 20px;
     font-weight: 400;
 }
 .btn-nav-contact{
-    font-size: 20px;
-    font-weight: 600;
-    border: none;
-    border-radius: 12px;
     background-color: rgb(254, 163, 1);
-    color: rgb(255, 255, 255);
-    width: 196px;
-    height: 50px;
-    padding: 10px;
 }
-.btn-enroll-now{
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 12px;
+.btn-enroll-now, .btn-view-all{
     background: rgb(17, 17, 17);
-    color: rgb(255, 255, 255);
-    width: 196px;
-    height: 50px;
-    padding: 10px;
 }
 .hero-container{
     justify-content: space-between;
@@ -73,11 +67,12 @@ ul{
 .section-header{
     font-size: 46px;
     font-weight: 700;
+    margin-top: 0;
 }
-.standard-curriculum-container, .our-stories{
+.standard-curriculum-container, .stories-container, .stories-grid{
     flex-direction: column;
-    padding: 60px 0;
     text-align: center;
+    padding: 60px 0;
     gap: 80px;
 }
 .standard-curriculum-section{
@@ -94,8 +89,6 @@ ul{
     padding: 40px;
 }
 .btn-more{
-    border: none;
-    color: rgb(255, 255, 255);
     font-size: 24px;
     font-weight: 900;
     width: 60px;
@@ -106,25 +99,24 @@ ul{
 .read-more{
     font-weight: 700;
 }
-.btn-view-all{
-    font-size: 20px;
-    font-weight: 600;
-    border: none;
-    border-radius: 12px;
-    background: rgb(17, 17, 17);
-    color: rgb(255, 255, 255);
-    width: 196px;
-    height: 50px;
-    padding: 10px;
+.stories-grid{
+    display: grid;
+    grid-template-areas:
+    'story-grid-1 story-grid-2 story-grid-3'
+    'story-grid-1 story-grid-4 story-grid-5';
+    gap: 20px;
 }
-.story-card-container{
-    border-radius: 16px;
-    background: rgb(255, 255, 255);
-    height: 340px;
-    width: 540px;
+.story{
+    flex-direction: column;
 }
-.story-img{
-    width: 100%;
+.story-content{
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 0 0 16px 16px;
+}
+.story img{
+    border-radius: 16px 16px 0 0;
 }
 #school-logo{
     height: fit-content;
@@ -165,4 +157,19 @@ ul{
 }
 #stories-section{
     background: url(assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+}
+#story-1{
+    grid-area: story-grid-1;
+}
+#story-2{
+    grid-area: story-grid-2;
+}
+#story-3{
+    grid-area: story-grid-3;
+}
+#story-4{
+    grid-area: story-grid-4;
+}
+#story-5{
+    grid-area: story-grid-5;
 }
