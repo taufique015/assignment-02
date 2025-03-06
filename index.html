@@ -12,27 +12,28 @@
       <nav class="flex">
         <div class="flex">
           <img id="school-logo" src="assets/logo.png" alt="school-logo" />
-          <h2>SCHOOL</h2>
+          <h2 class="hidden">SCHOOL</h2>
         </div>
-        <ul class="flex">
-          <li id="home-li">Home</li>
-          <li id="about-li">About</li>
-          <li id="facilities-li">Facilities</li>
-          <li id="admission-li">Admission</li>
+        <ul class="nav-bar flex hidden">
+          <li><a href="#"id="home-li">Home</a></li>
+          <li><a href="#" id="about-li">About</a></li>
+          <li><a href="#" id="facilities-li">Facilities</a></li>
+          <li><a href="#" id="admission-li">Admission</a></li>
         </ul>
-        <button class="btn btn-nav-contact">Contact</button>
+        <button class="btn btn-nav-contact hidden">Contact</button>
+        <img src="assets/hamburger.png" alt="hamburger" class="hamburger">
       </nav>
+    </header>
+    <main>
       <article>
         <div class="hero-container flex">
           <div class="hero-section flex">
-            <h1>
-              <marquee direction="down"
-                ><span id="empowering">Empowering</span><br />
-                students from small age<span id="towards-vision">
-                  towards vision</span
-                ></marquee
-              >
-            </h1>
+            <marquee direction="down">
+              <h1>
+                <span id="empowering">Empowering</span><br/>
+                students from small age<span id="towards-vision"> towards vision</span>
+              </h1>
+              </marquee>
             <p class="hero-paragraph">
               With the courage, Confidence, Creativity and Compassion to make
               their Unique Contribution in a Diverse and Dynamic World.
@@ -42,8 +43,6 @@
           <img src="assets/hero-kids.png" alt="hero-kids" />
         </div>
       </article>
-    </header>
-    <main>
       <section>
         <div class="standard-curriculum-container flex">
           <h2 class="section-header">Standard Curriculum</h2>
@@ -77,8 +76,8 @@
             </div>
           </div>
           <div>
-            <button class="btn btn-more">&lt</button>
-            <button class="btn btn-more">&gt</button>
+            <button class="btn btn-more hidden">&lt</button>
+            <button class="btn btn-more hidden">&gt</button>
           </div>
         </div>
       </section>
@@ -91,7 +90,7 @@
               <div class="story-content story-main">
                 <button class="date date-main">November 19, 2019</button>
                 <h2>A fun toddler coloring training on classroom</h2>
-                <p class="paragraph">
+                <p class="paragraph hidden">
                   Beautiful branding for changes by Never Now in Australia.<br />changes
                   is a platform for open discussion in an inclusive and
                   collaborative environment, providing the...
@@ -148,10 +147,10 @@
         <div class="footer-about-us-section">
           <h2>About School</h2>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Facilities</li>
-            <li>Admission</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Facilities</a></li>
+            <li><a href="#">Admission</a></li>
           </ul>
         </div>
         <div class="footer-socials-section">
