@@ -31,13 +31,22 @@
         font-size: 14px;
         font-weight: 500;
     }
+    .hero-img{
+        width: 100%;
+    }
     .btn{
         width: 40%;
         padding: 6px 24px;
         font-size: 1rem;
     }
+    .standard-curriculum-container{
+        gap: 10px;
+    }
     .standard-curriculum-section{
         flex-direction: column;
         gap: 20px;
+    }
+    .stories-grid{
+        display: flex;
     }
 }

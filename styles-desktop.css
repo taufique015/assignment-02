@@ -4,6 +4,7 @@
 }
 body{
     background-color: rgb(247, 247, 247);
+    margin: 0;
 }
 footer{
     background-color: rgb(1, 172, 253);
@@ -13,7 +14,7 @@ nav, .standard-curriculum-section{
     align-items: center;
 }
 nav, article, .standard-curriculum-container, .stories-container, .footer-section{
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
 }
 section{
@@ -27,7 +28,8 @@ h1{
 ul{
     list-style: none;
     font-size: 1.25rem;
-    gap: 2rem;
+    gap: 1.75rem;
+    padding-left: 0;
 }
 nav ul{
     font-weight: 600;
@@ -51,12 +53,16 @@ a{
     font-weight: 600;
     border-radius: 12px;
     color: rgb(255, 255, 255);
-    width: 30%;
+    width: 196px;
     height: 50px;
     padding: 10px;
 }
 .hamburger{
     display: none;
+}
+.nav-bar{
+    gap: 5%;
+    margin-bottom: 5px;
 }
 .hero-paragraph, .footer-paragraph{
     font-size: 1.25rem;
@@ -64,7 +70,9 @@ a{
 }
 .btn-nav-contact{
     background-color: rgb(254, 163, 1);
-    width: 15%;
+}
+.hero-img{
+    width: 37.5%;
 }
 .btn-enroll-now, .btn-view-all{
     background: rgb(17, 17, 17);
@@ -75,7 +83,7 @@ a{
 .hero-section{
     flex-direction: column;
     justify-content: center;
-    width: 640px;
+    width: 52.5%;
     gap: 12px;
 }
 .section-header{
@@ -87,18 +95,19 @@ a{
     flex-direction: column;
     text-align: center;
     padding: 60px 0;
-    gap: 60px;
 }
 .standard-curriculum-container{
-    gap: 0;
+    gap: 60px;
+}
+.standard-curriculum-section{
+    gap: 20px;
 }
 .class-info{
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    width: 288px;
-    height: 396px;
+    height: 380px;
     padding: 40px;
 }
 .btn-more{
@@ -117,7 +126,7 @@ a{
     grid-template-areas:
     "story-grid-1 story-grid-2 story-grid-3"
     "story-grid-1 story-grid-4 story-grid-5";
-    gap: 20px;
+    gap: 18px;
 }
 .story{
     flex-direction: column;
@@ -134,7 +143,7 @@ a{
     margin-bottom: 50px;
 }
 .story-main{
-    height: 268px;
+    height: 100%;
 }
 .story img{
     border-radius: 16px 16px 0 0;
