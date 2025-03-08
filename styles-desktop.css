@@ -122,11 +122,17 @@ a{
     font-weight: 700;
 }
 .stories-grid{
+    flex-direction: row;
+    gap: 20px;
+}
+.grid{
     display: grid;
-    grid-template-areas:
-    "story-grid-1 story-grid-2 story-grid-3"
-    "story-grid-1 story-grid-4 story-grid-5";
-    gap: 18px;
+    grid-template-areas: 
+    "story-grid-2 story-grid-3"
+    "story-3-sub story-3-sub"
+    "story-grid-4 story-grid-5";
+    gap: 16px;
+    width: 65%;
 }
 .story{
     flex-direction: column;
@@ -238,7 +244,7 @@ a{
     background: url(assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 }
 #story-1{
-    grid-area: story-grid-1;
+    width: 50%;
 }
 #story-2{
     grid-area: story-grid-2;
@@ -251,4 +257,9 @@ a{
 }
 #story-5{
     grid-area: story-grid-5;
+}
+@media screen and (min-width: 576px) {
+    #story-3-2{
+        display: none;
+    }
 }

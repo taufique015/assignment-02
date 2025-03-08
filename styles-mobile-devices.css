@@ -2,6 +2,19 @@
     body{
         margin: 0;
     }
+    nav, article, .hero-section, .standard-curriculum-container, .stories-container, .footer-section{
+        width: 90%;
+        margin: 0 auto;
+    }
+    header{
+        border: 1px solid rgb(254, 163, 1) ;
+    }
+    footer{
+        padding: 40px 20px;
+    }
+    h1, .section-header{
+        font-size: 32px;
+    }
     .hidden{
         display: none;
     }
@@ -9,9 +22,10 @@
         display: inline;
         width: 3rem;
     }
-    nav, article, .hero-section, .standard-curriculum-container, .stories-container, .footer-section{
-        width: 90%;
-        margin: 0 auto;
+    .btn{
+        width: 40%;
+        padding: 6px 24px;
+        font-size: 1rem;
     }
     .hero-container{
         flex-direction: column-reverse;
@@ -21,23 +35,12 @@
         text-align: center;
         margin-top: 16px;
     }
-    header{
-        border: 1px solid rgb(254, 163, 1) ;
-    }
-    h1, .section-header{
-        font-size: 32px;
-    }
-    .hero-paragraph, .footer-paragraph{
+    .hero-paragraph{
         font-size: 14px;
         font-weight: 500;
     }
     .hero-img{
         width: 100%;
-    }
-    .btn{
-        width: 40%;
-        padding: 6px 24px;
-        font-size: 1rem;
     }
     .standard-curriculum-container{
         gap: 10px;
@@ -46,7 +49,38 @@
         flex-direction: column;
         gap: 20px;
     }
-    .stories-grid{
-        display: flex;
+    .story img{
+        width: 100%;
+    }
+    .grid{
+        width: 100%;
+    }
+    .story-content h4{
+        font-size: .75rem;
+        margin-top: -12px;
+        margin-left: -10px;
+        width: 125%;
+    }
+    .date{
+        font-size: .75rem;
+        width: 122.5%;
+        left: -20px;
+    }
+    .footer-section{
+        display: inline;
+        padding: 0;
+    }
+    .footer-logo h2{
+        margin-bottom: 0;
+    }
+    .footer-paragraph{
+        font-size: 1.15rem;
+        font-weight: 400;
+    }
+    .footer-about-us-section ul li{
+        margin: 18px auto;
+    }
+    #july-date{
+        width: fit-content;
     }
 }
