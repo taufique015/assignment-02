@@ -15,6 +15,9 @@
     h1, .section-header{
         font-size: 32px;
     }
+    marquee{
+        text-align: center;
+    }
     .hidden{
         display: none;
     }
